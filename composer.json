@@ -35,7 +35,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Qdequippe\\OAuth2\\Client\\Test\\": "test/src/"
+            "Qdequippe\\OAuth2\\Client\\Test\\": "tests/src/"
         }
     },
     "extra": {
