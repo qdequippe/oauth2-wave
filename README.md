@@ -76,7 +76,6 @@ $options = [
 
 $authorizationUrl = $provider->getAuthorizationUrl($options);
 ```
-If neither are defined, the provider will utilize internal defaults.
 
 Find scopes available here https://developer.waveapps.com/hc/en-us/articles/360032818132-OAuth-Scopes.
 
