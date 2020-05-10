@@ -8,6 +8,7 @@ use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
+use Qdequippe\OAuth2\Client\Provider\Exception\WaveIdentityProviderException;
 use Qdequippe\OAuth2\Client\Token\AccessToken as WaveAccessToken;
 
 class WaveProvider extends AbstractProvider
@@ -40,11 +41,8 @@ class WaveProvider extends AbstractProvider
 
     protected function checkResponse(ResponseInterface $response, $data)
     {
-        if (isset($data['errors']) && $response->getStatusCode() >= 400) {
-            $message = $data['errors'][0]['message'];
-            $code = $data['errors'][0]['extensions']['code'];
-
-            throw new IdentityProviderException($message, $code, $data);
+        if (!empty($data['errors']) && $response->getStatusCode() >= 400) {
+            throw WaveIdentityProviderException::clientException($response, $data);
         }
     }
 

@@ -5,6 +5,7 @@ namespace Qdequippe\OAuth2\Client\Test\Provider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Tool\QueryBuilderTrait;
 use PHPUnit\Framework\TestCase;
+use Qdequippe\OAuth2\Client\Provider\Exception\WaveIdentityProviderException;
 use Qdequippe\OAuth2\Client\Provider\WaveProvider;
 use Mockery as m;
 use Qdequippe\OAuth2\Client\Provider\WaveResourceOwner;
@@ -127,7 +128,7 @@ class WaveProviderTest extends TestCase
 
     public function testExceptionThrownWhenErrorObjectReceived()
     {
-        $this->expectException(IdentityProviderException::class);
+        $this->expectException(WaveIdentityProviderException::class);
         $message = uniqid();
         $status = rand(400, 600);
         $code = uniqid();
