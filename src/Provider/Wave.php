@@ -20,12 +20,12 @@ class Wave extends AbstractProvider
 
     public function getBaseAuthorizationUrl()
     {
-        return $this->api . '/authorize';
+        return $this->api . '/authorize/';
     }
 
     public function getBaseAccessTokenUrl(array $params)
     {
-        return $this->api . '/token';
+        return $this->api . '/token/';
     }
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
@@ -84,10 +84,5 @@ class Wave extends AbstractProvider
     protected function createAccessToken(array $response, AbstractGrant $grant)
     {
         return new WaveAccessToken($response);
-    }
-
-    protected function getAccessTokenMethod()
-    {
-        return self::METHOD_GET;
     }
 }
