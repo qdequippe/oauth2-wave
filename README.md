@@ -2,6 +2,8 @@
 
 This package provides [Wave](https://www.waveapps.com) OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
+[![Build Status](https://travis-ci.org/qdequippe/oauth2-wave.svg)](http://travis-ci.org/qdequippe/oauth2-wave)
+
 ## Installation
 
 To install, use composer:
