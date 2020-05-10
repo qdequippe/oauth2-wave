@@ -85,4 +85,9 @@ class Wave extends AbstractProvider
     {
         return new WaveAccessToken($response);
     }
+
+    protected function getAccessTokenMethod()
+    {
+        return self::METHOD_GET;
+    }
 }
