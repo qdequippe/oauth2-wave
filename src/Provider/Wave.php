@@ -4,14 +4,13 @@ namespace Qdequippe\OAuth2\Client\Provider;
 
 use League\OAuth2\Client\Grant\AbstractGrant;
 use League\OAuth2\Client\Provider\AbstractProvider;
-use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
 use Qdequippe\OAuth2\Client\Provider\Exception\WaveIdentityProviderException;
 use Qdequippe\OAuth2\Client\Token\AccessToken as WaveAccessToken;
 
-class WaveProvider extends AbstractProvider
+class Wave extends AbstractProvider
 {
     use BearerAuthorizationTrait;
 
