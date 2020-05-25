@@ -43,7 +43,7 @@ class WaveTest extends TestCase
     {
         $url = $this->provider->getAuthorizationUrl();
         $uri = parse_url($url);
-        $this->assertEquals('/oauth2/authorize', $uri['path']);
+        $this->assertEquals('/oauth2/authorize/', $uri['path']);
     }
 
     public function testGetBaseAccessTokenUrl()
@@ -51,12 +51,11 @@ class WaveTest extends TestCase
         $params = [];
         $url = $this->provider->getBaseAccessTokenUrl($params);
         $uri = parse_url($url);
-        $this->assertEquals('/oauth2/token', $uri['path']);
+        $this->assertEquals('/oauth2/token/', $uri['path']);
     }
 
     public function testGetAccessToken()
     {
-        // lifted from DigitalOcean docs
         $testResponse = [
             'access_token' => 'mock_access_token',
             'token_type' => 'bearer',

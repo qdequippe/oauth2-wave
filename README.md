@@ -89,7 +89,7 @@ $ ./vendor/bin/phpunit
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/thephpleague/oauth2-wave/blob/master/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/qdequippe/oauth2-wave/blob/master/CONTRIBUTING.md) for details.
 
 
 ## Credits
@@ -100,4 +100,4 @@ Please see [CONTRIBUTING](https://github.com/thephpleague/oauth2-wave/blob/maste
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/thephpleague/oauth2-instagram/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/qdequippe/oauth2-wave/blob/master/LICENSE) for more information.

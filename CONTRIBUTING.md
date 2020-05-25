@@ -2,7 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-I accept contributions via Pull Requests on [Github](https://github.com/adam-paterson/oauth2-slack).
+I accept contributions via Pull Requests on [Github](https://github.com/qdequippe/oauth2-wave).
 
 
 ## Pull Requests
